@@ -23,5 +23,5 @@ app.listen(port, function() {
 
 app.get('/', function(req, res) {
 	console.log('Base URL hit');
-	res.sendFile();
+	res.sendFile(path.resolve('views/index.html'));
 });
